@@ -1,3 +1,4 @@
+import axios from "axios";
 const Tabs = (topics) => {
   // TASK 3
   // ---------------------
@@ -13,6 +14,7 @@ const Tabs = (topics) => {
   //   <div class="tab">technology</div>
   // </div>
   //
+  
 }
 
 const tabsAppender = (selector) => {
