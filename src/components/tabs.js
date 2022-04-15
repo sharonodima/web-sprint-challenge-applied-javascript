@@ -36,14 +36,14 @@ const tabsAppender = (selector) => {
   //
   axios.get("http://localhost:5001/api/topics")
        .then(response => {
-          let element = document.querySelector(selector);
+          const element = document.querySelector(selector);
           element.appendChild(Tabs(response.data.topics));
        })
        .catch(error => {
          console.log(error);
        })
        .finally(() => {
-         alert("axios.get for tabs completed");
+         console.log("axios.get for tabs completed");
        })
 }
 
