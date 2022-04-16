@@ -32,7 +32,7 @@ const Card = (article) => {
   imgCont.classList.add("img-container");
   
   headline.textContent = article.headline;
-  author.textContent = article.authorName;
+  name.textContent = `By ${article.authorName}`;
   img.setAttribute("src", article.authorPhoto);
 
   card.appendChild(headline);
@@ -41,9 +41,9 @@ const Card = (article) => {
   author.appendChild(imgCont);
   author.appendChild(name);
 
-  const cards = document.querySelector(".cards-container");
-  cards.addEventListener("click", () => {
-  console.log(article.headline)
+ 
+  card.addEventListener("click", () => {
+  console.log(article.headline);
 })
 
   return card;
